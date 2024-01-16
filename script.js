@@ -19,7 +19,7 @@ function sendMessage() {
     })
     .then(response => {
         var botResponse = response.data[0].text;
-        chatBox.innerHTML += '<p><strong><Бот по посику аниме>:</strong> ' + botResponse + '</p>';
+        chatBox.innerHTML += '<p><strong>Бот по посику аниме:</strong> ' + botResponse + '</p>';
 
         if (response.data.length > 1) {
             chatBox.innerHTML += "<ul>";
