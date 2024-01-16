@@ -1,0 +1,16 @@
+version: "3.1"
+stories: 
+  - story: ClosesTo
+    steps:
+    - intent: get_closest_to
+    - action: action_get_closest_to
+    
+  - story: BestFromGenre
+    steps:
+    - intent: get_best_from_genre
+    - action: action_get_best_from_genre
+
+  - story: RecommendBestBasedOnWatched
+    steps:
+    - intent: recommend_best_based_on_watched
+    - action: action_recommend_best_anime

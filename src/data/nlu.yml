@@ -1,0 +1,50 @@
+version: "3.1"
+nlu:
+- intent: get_closest_to
+  examples: |
+    - Подскажи аниме, похожее на [Naruto](target_name)
+    - Подскажи аниме, похожие на [Death Note](target_name)
+    - Аниме, похожие на [Naruto: Shippuden](target_name)
+    - Какие есть аниме, похожие на [Fullmetal Alchemist: Brotherhood](target_name)
+    - Какие есть аниме, как [Fullmetal Alchemist: Brotherhood](target_name)
+    - Что похоже на [Kimi no Na wa](target_name)
+    - [Kimi no Na wa](target_name)
+
+- intent: get_best_from_genre
+  examples: |
+    - Самые лучшие ание по жанру [Comedy](target_name)
+    - Что есть по жанру [Action](target_name)
+    - Аниме по жанру [Adventure](target_name)
+    - Жанр [Fantasy](target_name)
+
+- intent: recommend_best_based_on_watched
+  examples: |
+    - Рекомендуй аниме на основе [Naruto, One Piece, Dragon Ball](target_name)
+    - Какие аниме мне посмотреть, если я смотрел [Death Note, Attack on Titan](target_name)
+    - Посоветуй аниме после [My Hero Academia, Demon Slayer](target_name)
+    - Если мне нравятся [Your Name, Spirited Away], что еще посмотреть?(target_name)
+    - Я посмотрел [Tokyo Ghoul, Parasyte], рекомендуй что-то в этом духе(target_name)
+
+- intent: greet
+  examples: |
+    - Привет
+    - Здравствуйте
+    - Приветствую
+    - Добрый день
+    - Добрый вечер
+    - Доброе утро
+    - Доброй ночи
+    - Как дела?
+
+- intent: goodbye
+  examples: |
+    - Пока
+    - До свидания
+    - Спасибо, пока
+    - До скорой встречи
+    - Увидимся
+    - Всего доброго
+    - Прощай 
+    - До новых встреч
+    - Удачи
+    - Всего хорошего

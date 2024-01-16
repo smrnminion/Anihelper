@@ -1,0 +1,35 @@
+version: '3.1'
+intents:
+- recommend_best_based_on_watched
+- get_best_from_genre
+- get_closest_to
+- goodbye
+- greet
+entities:
+- target_name
+slots:
+  target_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: target_name
+actions:
+- utter_greet
+- action_get_closest_to
+- action_get_best_from_genre
+- action_recommend_best_anime
+responses:
+  utter_greet:
+  - text: |-
+      Привет!
+      Чем я могу помочь?
+  utter_goodbye:
+  - text: |-
+      До свидания.
+      Хорошего дня!
+  utter_default:
+  - text: Извините, я не могу понять ваш запрос. Пожалуйста, переформулируйте вопрос
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
