@@ -12,7 +12,7 @@ nlu:
 
 - intent: get_best_from_genre
   examples: |
-    - Самые лучшие ание по жанру [Comedy](target_name)
+    - Самые лучшие аниме по жанру [Comedy](target_name)
     - Что есть по жанру [Action](target_name)
     - Аниме по жанру [Adventure](target_name)
     - Жанр [Fantasy](target_name)
